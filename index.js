@@ -24,7 +24,7 @@ const server = http.createServer((req, res) => {
     filePath +='.html'
   }
 
-  console.log(filePath);
+  
   fs.readFile(filePath, (err, content) => {
     if (err) {
       fs.readFile(path.join(__dirname, 'public', 'error.html'), (err, data) => {
